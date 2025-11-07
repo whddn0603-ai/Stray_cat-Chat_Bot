@@ -108,7 +108,7 @@ def main():
 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=1200)  # ← 들여쓰기
+        st.image('/data/cat.jpg', width=1200)  # ← 들여쓰기
 
     st.markdown('---') 
     st.markdown("<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? </h1>", unsafe_allow_html=True)
