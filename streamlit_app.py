@@ -102,8 +102,8 @@ def main():
         st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=800)  # ← 들여쓰기
 
     st.markdown('---') 
-    st.title("안녕하세요, 츄르 주시겠어요?:\n"
-             "감사합니다.")
+    st.title("안녕하세요, 츄르 주시겠어요?\n")
+    st.title("감사합니다.")
 
     with st.sidebar:
         openai_api = st.text_input("OPENAI API 키", type="password")
