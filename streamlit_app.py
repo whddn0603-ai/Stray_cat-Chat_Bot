@@ -5,7 +5,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown(
-    "<div style='text-align:center;'>귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요.</div>",
+    "<div style='text-align:center;'>귀엽다고 함부로 만지지 마시오, 이것은 마지막 경고요.</div>",
+    unsafe_allow_html=True
+)
+st.markdown(
+    "<div style='text-align:center;'>"  "</div>",
     unsafe_allow_html=True
 )
 import os
