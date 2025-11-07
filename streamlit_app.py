@@ -1,10 +1,8 @@
 import streamlit as st
 
-st.title("🐈 길고양이 돌보미")
+st.title("🐈 길고양이 돌보미 챗봇")
 st.write(
-    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요.",
-    "길고양이 돌보미 가이드북을 학습한 전자고양이챗봇"
-)
+    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요."
 import os
 import streamlit as st
 import tempfile
@@ -98,9 +96,11 @@ def ask_agent(agent_executor, question: str):
 # --------------------------------------------------------------------
 def main():
     st.set_page_config(page_title="길고양이를 사랑한다면", layout="wide", page_icon="😺")
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
     st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=800)
     st.markdown('---')
-    st.title("야옹, 나는 길고양이 입니다")  
+    st.markdown("<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? 감사합니다.</h1>", unsafe_allow_html=True)
 
     with st.sidebar:
         openai_api = st.text_input("OPENAI API 키", type="password")
@@ -120,7 +120,7 @@ def main():
         if "messages" not in st.session_state:
             st.session_state["messages"] = []
 
-        user_input = st.chat_input("츄르를 입력하세요")
+        user_input = st.chat_input("저에 대해 물어보세요")
 
         if user_input:
             response = ask_agent(agent_executor, user_input)
