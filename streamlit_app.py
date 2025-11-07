@@ -96,11 +96,17 @@ def ask_agent(agent_executor, question: str):
 # --------------------------------------------------------------------
 def main():
     st.set_page_config(page_title="길고양이를 사랑한다면", layout="wide", page_icon="😺")
+
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-    st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=800)
+        st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=800)  # ← 들여쓰기
+
     st.markdown('---')
-    st.markdown("<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? 감사합니다.</h1>", unsafe_allow_html=True)
+    st.markdown(
+        "<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? 감사합니다.</h1>",
+        unsafe_allow_html=True
+    )
+
 
     with st.sidebar:
         openai_api = st.text_input("OPENAI API 키", type="password")
