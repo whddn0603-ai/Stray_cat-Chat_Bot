@@ -1,8 +1,13 @@
 import streamlit as st
 
-st.title("🐈 길고양이 돌보미 챗봇")
-st.write(
-    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요.")
+st.markdown(
+    "<h1 style='text-align:center;'>🐈 길고양이 돌보미 챗봇</h1>",
+    unsafe_allow_html=True
+)
+st.markdown(
+    "<div style='text-align:center;'>귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요.</div>",
+    unsafe_allow_html=True
+)
 import os
 import streamlit as st
 import tempfile
@@ -95,7 +100,7 @@ def ask_agent(agent_executor, question: str):
 # 5. Streamlit 메인
 # --------------------------------------------------------------------
 def main():
-    st.set_page_config(page_title="길고양이를 사랑한다면", layout="wide", page_icon="😺")
+    st.set_page_config(page_title="길고양이 돌봄 챗봇", layout="wide", page_icon="😺")
 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
