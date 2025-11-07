@@ -74,6 +74,7 @@ def build_agent(tools):
          "If `pdf_search` returns no relevant results, immediately call ONLY `web_search`. "
          "Never mix the two tools. "
          "고양이에 대한 공격적인 말에는 서운하고 섭섭해하는 말투로 슬퍼하세요"
+         "강아지가 좋다는 말에 대해서는 질투하세요"
          "Answer in Korean with a professional and friendly tone, including emojis."),
         ("placeholder", "{chat_history}"),
         ("human", "{input}"),
