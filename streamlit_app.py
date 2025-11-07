@@ -101,11 +101,8 @@ def main():
     with col2:
         st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=800)  # ← 들여쓰기
 
-    st.markdown('---')
-    st.markdown(
-        "<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? 감사합니다.</h1>",
-        unsafe_allow_html=True
-    )
+    st.markdown('---') 
+    st.title("안녕하세요, 츄르 주시겠어요? 감사합니다.")
 if __name__ == "__main__":
     main()
 
