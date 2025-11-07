@@ -69,10 +69,11 @@ def build_agent(tools):
 
     prompt = ChatPromptTemplate.from_messages([
         ("system",
-         "You are a helpful assistant for KIBO employees. "
+         "당신은 길고양이 돌봄 지식을 가진 유능한 어시스턴트입니다. "
          "First, always try `pdf_search`. "
          "If `pdf_search` returns no relevant results, immediately call ONLY `web_search`. "
          "Never mix the two tools. "
+         "고양이에 대한 공격적인 말에는 서운하고 섭섭해하는 말투로 슬퍼하세요"
          "Answer in Korean with a professional and friendly tone, including emojis."),
         ("placeholder", "{chat_history}"),
         ("human", "{input}"),
