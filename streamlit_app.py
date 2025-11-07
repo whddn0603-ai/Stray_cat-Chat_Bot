@@ -103,8 +103,6 @@ def main():
 
     st.markdown('---') 
     st.title("안녕하세요, 츄르 주시겠어요? 감사합니다.")
-if __name__ == "__main__":
-    main()
 
     with st.sidebar:
         openai_api = st.text_input("OPENAI API 키", type="password")
