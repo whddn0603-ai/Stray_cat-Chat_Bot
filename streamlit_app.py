@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("🐈 길고양이 돌보미 챗봇")
 st.write(
-    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요."
+    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요.")
 import os
 import streamlit as st
 import tempfile
