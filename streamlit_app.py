@@ -103,7 +103,7 @@ def main():
 
     st.markdown('---') 
     st.markdown("<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? </h1>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? </h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center;'>감사합니다 </h1>", unsafe_allow_html=True)
     
     with st.sidebar:
         openai_api = st.text_input("OPENAI API 키", type="password")
