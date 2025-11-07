@@ -2,7 +2,8 @@ import streamlit as st
 
 st.title("🐈 길고양이 돌보미")
 st.write(
-    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요."
+    "귀엽다고 함부로 만지지 마시오, 이것이 마지막 경고요.",
+    "길고양이 돌보미 가이드북을 학습한 전자고양이챗봇"
 )
 import os
 import streamlit as st
@@ -97,7 +98,7 @@ def ask_agent(agent_executor, question: str):
 # --------------------------------------------------------------------
 def main():
     st.set_page_config(page_title="길고양이를 사랑한다면", layout="wide", page_icon="😺")
-    st.image('/workspaces/Stray_cat-Chat_Bot/data/고양.jpg', width=800)
+    st.image('/workspaces/Stray_cat-Chat_Bot/data/cat.jpg', width=800)
     st.markdown('---')
     st.title("야옹, 나는 길고양이 입니다")  
 
