@@ -106,7 +106,8 @@ def main():
         "<h1 style='text-align:center;'>안녕하세요, 츄르 주시겠어요? 감사합니다.</h1>",
         unsafe_allow_html=True
     )
-
+if __name__ == "__main__":
+    main()
 
     with st.sidebar:
         openai_api = st.text_input("OPENAI API 키", type="password")
